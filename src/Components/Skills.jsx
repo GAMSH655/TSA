@@ -4,7 +4,7 @@ import Analytics from "../assets/analytics.png"
 import Analysis from "../assets/analysis.png"
 import Group from "../assets/Group1.png"
 import Market from "../assets/Market.png"
-import Planning from  "../assets/Planning.png"
+import Target from  "../assets/Target.png"
 import Brand from "../assets/Branding.png"
 import Research from "../assets/research.png"
 import Public from "../assets/Public.png"
@@ -12,7 +12,7 @@ const Skills = () => {
     const SKilsArray=[
         {skillsImg:Market, skillName:"business strategy"},
         {skillsImg:Communication, skillName:"corporate communications"},
-        {skillsImg:Planning, skillName:"strategic planning"},
+        {skillsImg:Target, skillName:"strategic planning"},
         {skillsImg:Research, skillName:"research"},
         {skillsImg:Analytics, skillName:"business analysis"},
         {skillsImg:Brand, skillName:"Brand strategy"},
@@ -25,7 +25,7 @@ const Skills = () => {
         <div className="grid  grid-cols-1 md:grid-cols-2">
         {
           SKilsArray.map(({skillName, skillsImg},index)=>(
-            <div className="shadow-lg p-3 m-3 rounded-md " key={index}>
+            <div className="shadow-lg p-3 m-3 rounded-md border-2 border-black  " key={index}>
              <div className="flex justify-center items-center">
              <img src={skillsImg} alt="" className='size-[100px]' />
              </div>
