@@ -3,6 +3,7 @@ import Header from "./Components/Header"
 import Hero from "./Components/Hero"
 import About from "./Components/About"
 import Skills from './Components/Skills'
+import Experiences from './Components/Experiences'
 const App = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const App = () => {
        <Hero/>
        <About/>
        <Skills/>
+       <Experiences/>
     </>
   )
 }

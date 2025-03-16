@@ -8,17 +8,17 @@ const Header = () => {
         setOpenNav(!openNav);
     };
 
-    const NavLinks = [
-        { path: "#", pathName: "Home" },
-        { path: "#", pathName: "About" },
-        { path: "#", pathName: "Resume" },
-        { path: "#", pathName: "Portfolio" },
-        { path: "#", pathName: "Blog" },
-        { path: "#", pathName: "Contact" },
-    ];
+        const NavLinks = [
+            { path: "#hero", pathName: "Home" },
+            { path: "#about", pathName: "About" },
+            { path: "#skills", pathName: "Skills" },
+            { path: "#experiences", pathName: "Experiences" },
+            { path: "#blog", pathName: "Blog" },
+            { path: "#contact", pathName: "Contact" },
+        ];
 
     return (
-        <div className="sticky top-0 w-full bg-white shadow-md z-50">
+        <div className="sticky top-0 w-full bg-white shadow-md z-50" id="home">
             <div className="flex justify-between p-4">
                 <h3 className="font-bold text-5xl uppercase">Tsa</h3>
                 <div className="hidden md:flex space-x-4">

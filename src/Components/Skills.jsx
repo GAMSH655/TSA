@@ -20,14 +20,14 @@ const Skills = () => {
         {skillsImg:Analysis, skillName:"market research"}
     ]
   return (
-    <div className='mt-12'>
+    <div className='mt-12' id='skills'>
          <h3 className="text-4xl font-bold uppercase p-4 text-center">Skills</h3>
         <div className="grid  grid-cols-1 md:grid-cols-2">
         {
           SKilsArray.map(({skillName, skillsImg},index)=>(
             <div className="shadow-lg p-3 m-3 rounded-md border-2 border-black  " key={index}>
              <div className="flex justify-center items-center">
-             <img src={skillsImg} alt="" className='size-[100px]' />
+             <img src={skillsImg} alt="" className='size-[50px] md:size-[100px]' />
              </div>
               <p className="text-center font-semibold text-xl uppercase m-2">{skillName}</p>
             </div>
