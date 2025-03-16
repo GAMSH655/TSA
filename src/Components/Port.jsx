@@ -56,7 +56,7 @@ const Port = () => {
   return (
     <div>
       <div className="p-4">
-        <h3 className="text-2xl font-bold uppercase flex items-center">
+        <h3 className="text-2xl font-bold uppercase block md:flex md:justify-betwen">
           <FaBriefcase className="mr-2" /> Experiences
         </h3>
       </div>
