@@ -6,6 +6,7 @@ import StepLabel from '@mui/material/StepLabel';
 import StepContent from '@mui/material/StepContent';
 import Typography from '@mui/material/Typography';
 import { FaGraduationCap } from 'react-icons/fa';
+import Port from '../Components/Port';
 
 const Experiences = () => {
   const steps = [
@@ -24,7 +25,7 @@ const Experiences = () => {
     {
       label: 'Ciel Consulting',
 
-      description: `● ESSENTIAL PROJECT MANAGEMENT (PMP/PRIMAVERA), Project Management● ESSENTIAL PROJECT MANAGEMENT (PMP/PRIMAVERA), Project Management 2006 - 2006.`,
+      description: `ESSENTIAL PROJECT MANAGEMENT (PMP/PRIMAVERA), Project Management● ESSENTIAL PROJECT MANAGEMENT (PMP/PRIMAVERA), Project Management 2006 - 2006.`,
     },
   ];
 
@@ -44,15 +45,19 @@ const Experiences = () => {
   );
 
   return (
-    <div>
-      <h3 className="text-4xl font-bold uppercase p-4 text-center">Skills</h3>
+    <div className="">
+         <h3 className="text-4xl font-bold uppercase p-4 text-center">portfolio</h3>
+         <div id='portfolio' className=' block md:flex first-line:md:justify-between p-5'>
       <div className="p-4">
         <h3 className="text-2xl font-bold uppercase flex items-center">
           <FaGraduationCap className="mr-2" /> Education
         </h3>
+        <VerticalLinearStepper />
       </div>
-      <VerticalLinearStepper />
+      <Port/>
     </div>
+    </div>
+   
   );
 };
 
