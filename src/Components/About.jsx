@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { use } from 'react'
 import Local from "../assets/bh.jpg"
+// import 'lenis/dist/lenis.css'
+import useLenis from '../Hooks/UseLenis'
 const About = () => {
+    useLenis()
   return (
     <div className=' p-[10px] md:p-[30px]'>
            <h3 className="text-2xl font-bold uppercase p-4 text-center">about me</h3>
