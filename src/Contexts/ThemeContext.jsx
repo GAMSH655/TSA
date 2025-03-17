@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext ,useEffect } from "react";
 
-const ThemeContext = createContext(); // ✅ Fix: Correctly initialize context
+const ThemeContext = createContext(); 
 
 const ThemeProvider = ({ children }) => { 
   const [darkMode, setDarkMode] = useState(false);
@@ -11,9 +11,9 @@ const ThemeProvider = ({ children }) => {
   useEffect(() => {
     document.body.classList.add("transition-colors", "duration-500");
     if (darkMode) {
-      document.body.classList.add("bg-black", "text-white");
+      document.body.classList.add("bg-black", "text-white", "shadow-xl", "shadow-gray-800");
     } else {
-      document.body.classList.remove("bg-black", "text-white");
+      document.body.classList.remove("bg-black", "text-white", "shadow-xl", "shadow-gray-800");
     }
   }, [darkMode]);
 
@@ -25,7 +25,7 @@ const ThemeProvider = ({ children }) => {
   );
 };
 
-export { ThemeContext, ThemeProvider }; // ✅ Fix: Correct export syntax
+export { ThemeContext, ThemeProvider }; 
 
 // Custom Hook for easier access
 export const useTheme = () => useContext(ThemeContext);

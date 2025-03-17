@@ -9,9 +9,9 @@ const ToggleButton = () => {
     <div>
       <button onClick={toggleTheme} className="cursor-pointer p-2">
         {darkMode ? (
-          <FaSun className="inline m-2 text-yellow-500" />
+          <FaMoon className="inline m-2 text-yellow-500" />
         ) : (
-          <FaMoon className="inline m-2 text-gray-800" />
+          <FaSun className="inline m-2 text-gray-800" />
         )}
       </button>
     </div>

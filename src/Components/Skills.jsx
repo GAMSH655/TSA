@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Communication from "../assets/communication.png"
 import Analytics from "../assets/analytics.png"
 import Analysis from "../assets/analysis.png"
@@ -8,7 +8,9 @@ import Target from  "../assets/Target.png"
 import Brand from "../assets/Branding.png"
 import Research from "../assets/research.png"
 import Public from "../assets/Public.png"
+import { ThemeContext } from '../Contexts/ThemeContext'
 const Skills = () => {
+  const {darkMode} = useContext(ThemeContext)
     const SKilsArray=[
         {skillsImg:Market, skillName:"business strategy"},
         {skillsImg:Communication, skillName:"corporate communications"},
@@ -25,7 +27,7 @@ const Skills = () => {
         <div className="grid  grid-cols-1 md:grid-cols-2">
         {
           SKilsArray.map(({skillName, skillsImg},index)=>(
-            <div className="shadow-lg p-3 m-3 rounded-md border-2 border-black  " key={index}>
+            <div className={`shadow-lg p-3 m-3 rounded-md border-2 border-black ${darkMode ? "bg-slate-800 shadow-lg" : "" }`} key={index}>
              <div className="flex justify-center items-center">
              <img src={skillsImg} alt="" className='size-[50px] md:size-[100px]' />
              </div>

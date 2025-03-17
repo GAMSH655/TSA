@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Tobi from "../assets/Tobi.jpg"
 import Ogun from "../assets/Ogun.jpg"
 import Mary from "../assets/Mary.jpg"
 import Idris from "../assets/Idris.jpg"
 import Charles from "../assets/Charles.jpg"
 import Brook from "../assets/Brooke.jpg"
+import { ThemeContext } from "../Contexts/ThemeContext"
 const Comments = () => {
+  const {darkMode} = useContext(ThemeContext)
     const TestimonalArray = [
         {
         img:Mary,
@@ -56,7 +58,7 @@ const Comments = () => {
         <div className="  block md:grid md:grid-cols-2">
             {
                 TestimonalArray.map(({img , name , role , year , description} , index)=>{
-                    return <div className=" shadow-lg block md:flex rounded-md p-4 m-4" key={index}>
+                    return <div className={`shadow-lg block md:flex rounded-md p-4 m-4 ${darkMode ? " bg-slate-800 shadow-lg" : ""}`} key={index}>
                     <img src={img} alt="" className="size-[100px] rounded-full m-3" />
                       <div className="">
                           <h3 className="font-semibold text-lg capitalize m-1 ">{name}</h3>
