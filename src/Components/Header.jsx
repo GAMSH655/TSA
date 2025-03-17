@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaSun } from "react-icons/fa6";
-
+import ToggleButton from "../Contexts/ToggleButton";
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
     const handleNav = () => {
@@ -18,7 +18,7 @@ const Header = () => {
         ];
 
     return (
-        <div className="sticky top-0 w-full bg-white shadow-md z-50  max-w-[1200px] mx-auto" id="home">
+        <div className="sticky top-0 w-full bg-white shadow-md z-50  " id="home">
             <div className="flex justify-between p-4">
                 <h3 className="font-bold text-5xl uppercase">Tsa</h3>
                 <div className="hidden md:flex space-x-4">
@@ -35,9 +35,7 @@ const Header = () => {
                 <button className="md:hidden" onClick={handleNav}>
                        <FaBars className="text-2xl" />
                 </button>
-                <button className="">
-                       <FaSun className="text-2xl" />
-                </button>
+                <ToggleButton />
             </div>
 
             {/* Mobile Navigation (absolute overlay) */}

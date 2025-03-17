@@ -7,9 +7,11 @@ import Experiences from './Components/Experiences'
 import Review from "./Components/Review"
 import Contact from './Components/Contact'
 import Scroll from './Hooks/Sroll'
+import { ThemeProvider } from './Contexts/ThemeContext'
 const App = () => {
   return (
     <>
+    <ThemeProvider>
     <Scroll/>
        <Header/>
        <Hero/>
@@ -18,6 +20,8 @@ const App = () => {
        <Experiences/>
        < Review/>
        <Contact/>
+    </ThemeProvider>
+    
     </>
   )
 }
