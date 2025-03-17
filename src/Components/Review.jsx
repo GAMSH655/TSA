@@ -2,7 +2,7 @@ import React from 'react'
 import Tobi from "../assets/Tobi.jpg"
 import Ogun from "../assets/Ogun.jpg"
 import Mary from "../assets/Mary.jpg"
-import Idri from "../assets/Idri.jpg"
+import Idris from "../assets/Idris.jpg"
 import Charles from "../assets/Charles.jpg"
 import Brook from "../assets/Brooke.jpg"
 const Comments = () => {
