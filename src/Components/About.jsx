@@ -5,7 +5,7 @@ import useLenis from '../Hooks/UseLenis'
 const About = () => {
     useLenis()
   return (
-    <div className=' p-[10px] md:p-[30px]' id='about'>
+    <div className=' p-[10px] md:p-[30px]  max-w-[1200px] mx-auto' id='about'>
            <h3 className="text-2xl font-bold uppercase p-4 text-center">about me</h3>
         <div className=" block md:flex md:justify-between mt-9">
          

@@ -45,9 +45,9 @@ const Experiences = () => {
   );
 
   return (
-    <div className="">
+    <div className=" max-w-[1200px] mx-auto">
          <h3 className="text-4xl font-bold uppercase p-4 text-center">portfolio</h3>
-         <div id='portfolio' className=' block md:flex md:justify-between p-5'>
+         <div id='portfolio' className=' block md:flex md:justify-center md:items-center p-5'>
       <div className="p-4">
         <h3 className="text-2xl font-bold uppercase flex items-center">
           <FaGraduationCap className="mr-2" /> Education
