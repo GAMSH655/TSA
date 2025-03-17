@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { FaBarsProgress } from "react-icons/fa6";
+import { FaSun } from "react-icons/fa6";
 
 const Header = () => {
     const [openNav, setOpenNav] = useState(false);
@@ -34,6 +34,9 @@ const Header = () => {
                 </div>
                 <button className="md:hidden" onClick={handleNav}>
                        <FaBars className="text-2xl" />
+                </button>
+                <button className="">
+                       <FaSun className="text-2xl" />
                 </button>
             </div>
 

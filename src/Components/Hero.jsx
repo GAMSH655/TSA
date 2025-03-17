@@ -14,8 +14,9 @@ const Hero = () => {
         <div className='block md:flex md:justify-between m-0 p-5 hero max-w-[1200px] mx-auto' id='hero'>
             <div className="p-5 mt-[10px] md:mt-[200px]">
                 <h3 className="text-center md:text-left text-3xl font-normal text-white capitalize">hello i'm</h3>
-                <h2 className="text-[5rem] font-bold capitalize text-white text-center md:text-left">
-                    sheriff
+                <h2 className="text-[3rem] md:text-[5rem] font-bold capitalize text-white text-center md:text-left"> sheriff </h2>
+                <h2 className=" text-[3rem] md:text-[5rem] font-bold capitalize text-white text-center md:text-left"> adekoya 
+                  <span className='text-sm font-normal uppercase'>(tsa)</span>
                 </h2>
                 <p className='uppercase text-white text-lg md:text-2xl font-normal md:font-semibold mt-[10px] text-center md:text-left'>
                     Bachelor of Science - BS, Psychology.
