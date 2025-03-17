@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaSun } from "react-icons/fa6";
 import ToggleButton from "../Contexts/ToggleButton";
+import { ThemeContext } from "../Contexts/ThemeContext"
 const Header = () => {
+    const {darkMode} = useContext(ThemeContext)
     const [openNav, setOpenNav] = useState(false);
     const handleNav = () => {
         setOpenNav(!openNav);
@@ -19,14 +21,14 @@ const Header = () => {
 
     return (
         <div className="sticky top-0 w-full bg-white shadow-md z-50  " id="home">
-            <div className="flex justify-between p-4">
+            <div className={`flex justify-between text-black p-4 ${darkMode ? "bg-slate-800 text-white" : ""}`}>
                 <h3 className="font-bold text-5xl uppercase">Tsa</h3>
                 <div className="hidden md:flex space-x-4">
                     {NavLinks.map(({ path, pathName }, index) => (
                         <a
                             href={path}
                             key={index}
-                           className='p-2 m-2 text-black hidden md:inline  text-xl font-normal capitalize'
+                           className={`p-2 m-2 text-black hidden md:inline  text-xl font-normal capitalize${darkMode ? "bg-slate-800 text-white" : ""}`}
                         >
                             {pathName}
                         </a>
