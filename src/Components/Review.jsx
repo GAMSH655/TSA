@@ -43,7 +43,7 @@ const Comments = () => {
         description:"I have worked with Sheriff in many teams, both while I was Project Manager at Insight Publicis and the MD’s TA, and after that. He is a seasoned Brand Strategist who stands out in any team. His unique contribution always wins the clients interests, gets the job done and exceeds expectations.His attitude is remarkable and that is particularly the secret that differentiates him, he always immerses himself in any work and produces the insights that most people don’t.He is not just good at the job but he is also great with people, and that is how I know he will go very far. I recommend him any day!"
         },
         {
-        img:Idri,
+        img:Idris,
         name:"Idris Imran" ,
         role:"Former Country Partner in Nigeria — JungleworksFormer",
         year:"March 20, 2018, Idris was Sheriff’s mentor",
