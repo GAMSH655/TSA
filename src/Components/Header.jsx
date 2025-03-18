@@ -34,10 +34,10 @@ const Header = () => {
                         </a>
                     ))}
                 </div>
+                <ToggleButton />
                 <button className="md:hidden" onClick={handleNav}>
                        <FaBars className="text-2xl" />
                 </button>
-                <ToggleButton />
             </div>
 
             {/* Mobile Navigation (absolute overlay) */}
