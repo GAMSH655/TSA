@@ -53,6 +53,7 @@ const Experiences = () => {
           <FaGraduationCap className="mr-2" /> Education
         </h3>
         <VerticalLinearStepper />
+      
       </div>
       <Port/>
     </div>
