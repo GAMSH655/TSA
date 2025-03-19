@@ -53,7 +53,7 @@ const Comments = () => {
         },
     ]
   return (
-    <div id='review' className=' max-w-[1200px] mx-auto'> 
+    <div id='review' className=' max-w-[1200px] mx-auto  mt-[50px]'> 
         <h3 className="text-4xl font-bold uppercase p-4 text-center">Reviews</h3>
         <div className="  block md:grid md:grid-cols-2">
             {
