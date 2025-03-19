@@ -24,7 +24,7 @@ const Skills = () => {
   return (
     <div className='mt-12  max-w-[1200px] mx-auto' id='skills'>
          <h3 className="text-4xl font-bold uppercase p-4 text-center">Skills</h3>
-        <div className="grid  grid-cols-1 md:grid-cols-2">
+        <div className="grid  grid-cols-1 md:grid-cols-4">
         {
           SKilsArray.map(({skillName, skillsImg},index)=>(
             <div className={`shadow-lg p-3 m-3 rounded-md border-2 border-black ${darkMode ? "bg-slate-800 shadow-lg" : "" }`} key={index}>

@@ -16,7 +16,7 @@ const   Contact =()=> {
   };
 
   return (
-    <div className="" id="contact">
+    <div className="max-w-[1200px] mx-auto" id="contact">
         <div className="bg-gray-900 text-white p-8 flex flex-col md:flex-row gap-8">
       {/* Form Section */}
       <div className="w-full md:w-1/2">
