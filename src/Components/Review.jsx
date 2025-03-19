@@ -63,7 +63,7 @@ const Comments = () => {
                       <div className="">
                           <h3 className="font-semibold text-lg capitalize m-1 ">{name}</h3>
                            <p className="m-1 ">{role}</p>
-                           <small  className='m-1 '>{year}</small>
+                           <small  className='m-1'>{year}</small>
                            <p className="m-1 ">{description}</p>
                       </div>
                     </div>

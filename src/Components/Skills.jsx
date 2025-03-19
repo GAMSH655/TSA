@@ -13,7 +13,7 @@ const Skills = () => {
   const {darkMode} = useContext(ThemeContext)
     const SKilsArray=[
         {skillsImg:Market, skillName:"business strategy"},
-        {skillsImg:Communication, skillName:"corporate communications"},
+        {skillsImg:Group, skillName:"corporate communications"},
         {skillsImg:Target, skillName:"strategic planning"},
         {skillsImg:Research, skillName:"research"},
         {skillsImg:Analytics, skillName:"business analysis"},

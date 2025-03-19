@@ -56,7 +56,7 @@ const Port = () => {
   return (
     <div className=" max-w-[1200px]  mx-auto">
       <div className="p-4">
-        <h3 className="text-2xl font-bold uppercase block md:flex md:justify-betwen">
+        <h3 className="text-xl font-bold uppercase  flex ">
           <FaBriefcase className="mr-2" /> Experiences
         </h3>
       </div>
